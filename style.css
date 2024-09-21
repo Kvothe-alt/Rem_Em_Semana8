@@ -1,0 +1,118 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+@font-face {
+    font-family: JcJc;
+    src: url(font/josephsophia.ttf);
+}
+
+html{
+    margin-left: 60px;
+    margin-right: 60px;
+    font-family: JcJc;
+    font-size: 18px;
+}
+
+h1{
+    font-size: 2.5rem;
+}
+
+header, footer{
+    background-color: rgb(156, 255, 255);
+    display: flex;
+    align-items: center;  /*Horizontal*/
+    justify-content: space-around; /*Vertical*/
+}
+
+img{
+    width: 100%;
+}
+
+.logo{
+    width: 120px;
+    padding: 15px;
+}
+
+.logo img{
+    border-radius: 50%;
+    border: 2px solid gray;
+}
+
+nav{
+    background-color: rgb(174, 251, 225);
+    text-align: center;
+    padding: 15px;
+}
+
+nav a{
+    background-color: blanchedalmond;
+    color: burlywood;
+    padding: 6px 10px;
+    text-decoration: none;
+    box-shadow: 4px 5px 4px 1px rgb(0, 0, 0);
+    border-radius: 15px;
+}
+
+nav a:hover{
+background-color: pink;
+color: palevioletred;
+}
+
+main{
+    /* background-color: rgb(92, 254, 200); */
+    min-height: 100vh;
+    background-image: url(images/fondo1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+   /*  background: linear-gradient(to bottom right, rgb(129, 201, 221), rgb(190, 235, 220)); */
+   padding: 30px 0;
+}
+
+.cuadro-px{
+    width: 500px;
+    height: 300px;
+    padding: 20px;
+    text-align: justify;
+    margin: 25px auto;
+    background-color: rgba(245, 245, 245, 0.2);
+    border: 2px solid whitesmoke;
+}
+
+.cuadro-rem{
+    width: 31.25rem;
+    height: 18.75rem;
+    padding: 1.25rem;
+    text-align: justify;
+    margin: 1.5625rem auto;
+    background-color: rgba(245, 245, 245, 0.2);
+    border: .125rem solid whitesmoke;
+}
+
+.em{
+    font-size: 30px;
+}
+
+.cuadro-em{
+    width: 31.25em;
+    height: 18.75em;
+    padding: 1.25em;
+    text-align: justify;
+    margin: 1.5625em auto;
+    background-color: rgba(245, 245, 245, 0.2);
+    border: .125em solid whitesmoke;
+}
+
+.columnas{
+    display: flex;
+    gap: 3%;
+    align-items: center;
+    justify-content: center;
+}
+
+.columnas .dos{
+    width: 30%;
+}
